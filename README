@@ -1,0 +1,20 @@
+Code Sources utilized in this assignment:
+#ask-290284 in AskBCS Learning Assistance in Slack with Peter Osipchuk. This was to determine why my data frame of clean_mouse_study had 249 instances, instead of 248 as the starter code suggested. Code run included clean_mouse_study=mouse_study[mouse_study['Mouse ID'].isin(variable in witch you got duplaicte mouse ids)==False] and len(clean_mouse_study["Mouse ID"].unique()).
+ChatGPT was used to proofread my code. Code block "quartiles = regimen_data.quantile([0.25, 0.5, 0.75])
+    lower_quartile = quartiles[0.25]
+    upper_quartile = quartiles[0.75]
+    iqr = upper_quartile - lower_quartile
+    
+    lower_bound = lower_quartile - 1.5 * iqr
+    upper_bound = upper_quartile + 1.5 * iqr
+
+    outliers = regimen_data[(regimen_data < lower_bound) | (regimen_data > upper_bound)]
+    
+
+    print(f"Summary statistics for {regimen}:")
+    print(f" - Lower Quartile: {lower_quartile}")
+    print(f" - Upper Quartile: {upper_quartile}")
+    print(f" - Interquartile Range (IQR): {iqr}")
+    print(f" - Lower Bound: {lower_bound}")
+    print(f" - Upper Bound: {upper_bound}")
+    print(f" - Potential Outliers: {outliers.to_list()}\n")" was used to determine quartiles. In other instances GPT helped condense/clean up code.
